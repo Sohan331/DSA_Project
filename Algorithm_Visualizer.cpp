@@ -282,7 +282,7 @@ void ternarySearch()
             high = mid2 - 1;
         }
 
-        // Print new search space
+       
         cout << "Now our search space is: ";
         for (int i = low; i <= high; i++) cout << v[i] << " ";
         cout << nl << nl;
@@ -314,7 +314,7 @@ void imStack()
         {
             if (!st.empty())
             {
-                // Show current stack before popping
+                
                 stack<int> temp = st;
                 vector<int> visual;
                 while (!temp.empty())
@@ -332,7 +332,7 @@ void imStack()
                 cout << "Popped: " << st.top() << nl;
                 st.pop();
 
-                // Show current stack after pop
+               
                 if (!st.empty())
                 {
                     temp = st;
@@ -392,7 +392,7 @@ void imQueue()
 
     while (true)
     {
-        cout << "1: Enqueue\n2: Dequeue\n3: Display Queue (FIFO)\n4: Exit\n";
+        cout << "1: Enqueue (push)\n2: Dequeue (pop)\n3: Display Queue (FIFO)\n4: Exit\n";
         cin >> choice;
 
         if (choice == 1)
@@ -406,7 +406,7 @@ void imQueue()
         {
             if (!q.empty())
             {
-                // Show current queue before dequeue
+                
                 queue<int> temp = q;
                 vector<int> visual;
                 while (!temp.empty())
@@ -424,7 +424,7 @@ void imQueue()
                 cout << "Dequeued: " << q.front() << nl;
                 q.pop();
 
-                // Show current queue after dequeue
+                
                 if (!q.empty())
                 {
                     temp = q;
